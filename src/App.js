@@ -21,7 +21,7 @@ function App(props) {
 
   useEffect(()=> {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2020-11-04`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2020-12-08`)
         .then(res => {
           setData(res.data);
           console.log(res.data);
@@ -33,10 +33,18 @@ function App(props) {
 
   return (
     <div className="App">
-      <Header />
-      <Gallery />
-      <Details />
-      <Footer />
+      <Header
+      title={data.title}
+      date={data.date}
+      />
+      <Gallery photo={data.url}/>
+      <Details
+      explanation={data.explanation}
+      hdPhoto={data.hdurl}
+      />
+      <Footer 
+      copyright={data.copyright}
+      />
     </div>
   );
 }

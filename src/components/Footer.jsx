@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Footer() {
+function Footer(props) {
+
+  const { copyright } = props;
   return (
     <div>
-      <h2>Footer Component</h2>
+      <h3>Photo courtesy of {copyright}</h3>
+      <h4>Nasa</h4>
     </div>
   )
 }

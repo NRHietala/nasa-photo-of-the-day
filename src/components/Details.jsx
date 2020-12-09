@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Details() {
+function Details(props) {
+  const { explanation, hdPhoto } = props;
+
+
   return (
     <div>
-      <h2>Details Component Rendering!</h2>
+      <p>{explanation}</p>
+       {/* add button functionality */}
+      <button src={hdPhoto}>Click Here for High Definition Version</button>
     </div>
   )
 }

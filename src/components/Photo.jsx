@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Photo() {
+function Photo(props) {
+  const { photo } = props;
   return (
     <div>
-      <h2>Photo component has arrived!</h2>
+      <img src={photo} alt="Outer Space"/>
     </div>
   )
 }

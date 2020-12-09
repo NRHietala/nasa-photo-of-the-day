@@ -1,11 +1,12 @@
 import React from 'react'
 import Photo from './Photo';
 
-function Gallery() {
+function Gallery(props) {
+  const { photo } = props;
+
   return (
     <div>
-      <h2>I'm the Gallery component!</h2>
-      <Photo />
+      <Photo photo={photo}/>
     </div>
   )
 }
