@@ -1,10 +1,19 @@
-import React from 'react'
-
+import React from 'react';
+import styled from 'styled-components';
 function Photo(props) {
   const { photo } = props;
+
+
+  const Image = styled.img `
+  border: 4px solid black;
+  margin: auto;
+  height: 60vh;
+  `
+
+
   return (
     <div>
-      <img src={photo} alt="Outer Space"/>
+      <Image src={photo} alt="Outer Space"/>
     </div>
   )
 }

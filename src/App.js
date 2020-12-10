@@ -22,24 +22,10 @@ function App(props) {
 
 * {
   padding: 0px;
-  margin:0px;
+  margin: 0px;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-    box-sizing:border-box;
+  
     background: url("https://ffwallpaper.com/wallup/cosmo/cosmo-12.jpg");
     background-position:center;
     background-repeat: no-repeat;
@@ -47,6 +33,9 @@ code {
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
+    justify-content:space-between;
+    height: 100vh;
+    box-sizing:border-box;
   `
 
 
@@ -63,7 +52,7 @@ code {
 
 
   return (
-    <Wrapper>
+    <Wrapper className='wrapper'>
       <Header
       title={data.title}
       date={data.date}
