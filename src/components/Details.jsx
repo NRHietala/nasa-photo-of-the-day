@@ -20,6 +20,7 @@ function Details(props) {
       border: 2px solid black;
       margin-bottom: 10px;
       text-align:center;
+      font-size: 1.2rem;
     }
 
     .btn {
@@ -29,6 +30,11 @@ function Details(props) {
       background:gold;
       border:none;
       border-radius: 15px;
+      font-size:1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
 
@@ -38,7 +44,7 @@ function Details(props) {
     <Details>
       <p>{explanation}</p>
        {/* add button functionality */}
-      <button className='btn' src={hdPhoto}>Click Here for High Definition Version</button>
+      <a href={hdPhoto}><button className='btn'>Click Here for High Definition Version</button></a>
     </Details>
   )
 }
