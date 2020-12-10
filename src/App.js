@@ -34,7 +34,7 @@ function App(props) {
     flex-flow: column nowrap;
     align-items:center;
     justify-content:space-between;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing:border-box;
   `
 
